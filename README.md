@@ -13,7 +13,7 @@ java -version
 
 sudo apt-get install apt-transport-https -y
 
-![image](https://user-images.githubusercontent.com/20743678/184070495-86775951-ceb5-4326-adc9-a26feffe5249.png)
+![image](https://user-images.githubusercontent.com/20743678/184070926-493cde49-aacc-418d-a6ab-7b6f6c7768f2.png)
 
 url -fsSL https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo apt-key add -
 
