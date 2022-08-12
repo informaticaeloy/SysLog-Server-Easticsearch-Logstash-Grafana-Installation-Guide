@@ -43,3 +43,7 @@ curl http://localhost:9200
 
 ![image](https://user-images.githubusercontent.com/20743678/184349689-c01d38e1-a766-44dc-9856-475d935d729d.png)
 
+wget https://artifacts.elastic.co/downloads/kibana/kibana-8.3.3-amd64.deb
+
+![image](https://user-images.githubusercontent.com/20743678/184350708-25a5fad9-7376-4fef-a211-25ccd23b1246.png)
+
