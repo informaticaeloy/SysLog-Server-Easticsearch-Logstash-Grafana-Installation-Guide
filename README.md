@@ -45,5 +45,18 @@ curl http://localhost:9200
 
 wget https://artifacts.elastic.co/downloads/kibana/kibana-8.3.3-amd64.deb
 
-![image](https://user-images.githubusercontent.com/20743678/184350708-25a5fad9-7376-4fef-a211-25ccd23b1246.png)
+![image](https://user-images.githubusercontent.com/20743678/184352101-724c8ef0-6122-4be5-9bea-71f9c1823dd4.png)
 
+sudo dpkg -i kibana-8.3.3-amd64.deb 
+
+systemctl status kibana
+
+systemctl enable kibana
+
+systemctl start kibana
+
+![image](https://user-images.githubusercontent.com/20743678/184352743-c2292d39-4934-42ee-a32e-1c0a6181b738.png)
+
+sudo nano /etc/kibana/kibana.yml
+
+![image](https://user-images.githubusercontent.com/20743678/184353068-1fdfc01d-b147-4055-a137-bee8e7a93912.png)
