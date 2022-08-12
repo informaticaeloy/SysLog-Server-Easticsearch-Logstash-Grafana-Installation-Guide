@@ -33,3 +33,7 @@ sudo apt-get install elasticsearch -y
 
 ![image](https://user-images.githubusercontent.com/20743678/184070814-5fbfa251-e8dc-4460-89e0-ed7a28132b01.png)
 
+sudo curl --cacert /etc/elasticsearch/certs/http_ca.crt -u elastic https://localhost:9200
+
+![image](https://user-images.githubusercontent.com/20743678/184077607-50fc2059-8a82-4efc-8e8a-4398130783e0.png)
+
