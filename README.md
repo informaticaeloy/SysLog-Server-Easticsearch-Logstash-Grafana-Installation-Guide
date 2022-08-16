@@ -33,9 +33,7 @@ systemctl start elasticsearch
 
 ![image](https://user-images.githubusercontent.com/20743678/184346309-4cad6569-f916-43ab-b9cd-946e90c2293e.png)
 
-cd /etc/elasticsearch
-
-sudo nano elasticsearch.yml
+sudo nano /etc/elasticsearch/elasticsearch.yml
 
 ![image](https://user-images.githubusercontent.com/20743678/184347029-c392cbe8-08f9-4748-afc7-401219292fae.png)
 
@@ -60,3 +58,29 @@ systemctl start kibana
 sudo nano /etc/kibana/kibana.yml
 
 ![image](https://user-images.githubusercontent.com/20743678/184353068-1fdfc01d-b147-4055-a137-bee8e7a93912.png)
+
+wget https://artifacts.elastic.co/downloads/logstash/logstash-8.3.3-amd64.deb
+
+![image](https://user-images.githubusercontent.com/20743678/184356280-102fa646-febd-405b-bbe4-95a799803fa2.png)
+
+dpkg -i logstash-8.3.3-amd64.deb
+
+![image](https://user-images.githubusercontent.com/20743678/184356389-08aded38-6222-47b8-a7b0-e809d7543794.png)
+
+cp /etc/logstash/logstash-sample.conf /etc/logstash/conf.d/logstash.conf
+
+![image](https://user-images.githubusercontent.com/20743678/184357092-ca5e35de-bed1-4451-ab0f-d1a8a22f31dd.png)
+
+systemctl restart logstash
+
+systemctl status logstash
+
+![image](https://user-images.githubusercontent.com/20743678/184357410-80c41df3-10fd-4acc-9647-92d97d419617.png)
+
+cd /usr/share/logstash/bin
+
+./logstash -f logstash.conf
+
+![image](https://user-images.githubusercontent.com/20743678/184357860-0ff41bf0-754d-4a25-a5be-e2f50beeeea4.png)
+
+echo %
